@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: lightgray;
+}
+
+header {
+    background-color: gray;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+span#burguer {
+    background-color: rgb(10, 17, 17);
+    color: white;
+    display: block; /*PREENCHER TODO BACKGROUND DE UM CANTO A OUTRO DA TELA*/
+    text-align: center; /*CENTRALIZAR O ICONE*/
+    padding: 10px;
+    cursor: pointer; /*O CURSO IRÁ VIRAR UMA MÃOZINHA*/
+}
+
+span#burguer:hover {
+    background-color: white; /*MUDAR A COR AO PASSAR O CURSO*/
+    color: black; /*MUDAR A COR AO PASSAR O CURSO*/
+}
+
+menu {
+    display: none; /*O SITE IRA CARREGAR COM O CONTEUDO OCULTADO.*/
+}
+
+menu ul {
+    list-style-type: none; /*TIRAR AS BOLINHAS DO MENU*/
+}
+
+menu a { /*LINK QUE ESTÁ DENTRO DO MENU*/
+    display: block;
+    padding: 10px; /*ESPAÇAMENTO ENTRE ELES*/
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 2px solid gray;
+}
+
+menu a:hover {
+    background-color: rgb(10, 8, 8);
+}
+
+main {
+    width: 90vw; /* FICAR 90% AFASTADO DO CANTO*/
+    background-color: white;
+    margin: auto; /*CENTRALIZAR O CONTEUDO*/
+    margin-top: 10;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px; /*ESPAÇAMENTO ABAIXO DO TITULO DA NOTICIA*/
+}
+
+article > p {
+    text-align: justify; /*JUSTIFICAR O TEXTO*/
+    margin-bottom: 20px; /*ESPAÇAMENTO ENTRE OS PARAGRAFOS*/
+    text-indent: 20px; /*ESPAÇAMENTO DO INICIO DO PARAGRAFO*/
+}
