@@ -22,6 +22,8 @@ header {
 header img { /*CONFIGURAÇÃO DA IMAGEM DO TOPO*/
     display: block;
     width: 96.5vw;
+    margin: auto;
+    
 }
 /*------- FIM DA CONFIGURAÇÃO DO CABEÇALHO -------*/
 
