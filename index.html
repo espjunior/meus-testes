@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+
     <title>Media Queries</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <img src="imagens/topo-celular003.jpg" alt="Imagem para Celular">
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> <!--LINHA DO DESIGNER DO MENU HAMBURGUER-->
@@ -27,24 +29,29 @@
     
     <main>
         <article>
-            <h2>Testando Media Queries</h2>
+            <h2>Cuphead & Mugman</h2>
 
-            <img class="img-pequena" src="imagens/logo001.jpg" alt="Logo Inicial">
+            <img class="img-pequena" src="imagens/img001-p.jpg" alt="Logo Inicial">
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius et soluta nostrum impedit. Earum recusandae quod distinctio perspiciatis, labore quidem, aperiam ipsum laboriosam, voluptatibus neque quas nulla corrupti eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur deserunt unde. Sunt magnam corporis, cumque et, quam provident, consequatur accusantium voluptas architecto debitis necessitatibus deleniti molestias odit doloremque. Tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quas tenetur veniam id nam mollitia, accusamus blanditiis dolores alias. Asperiores earum quo, tempora voluptatem debitis aliquid maiores optio doloremque reprehenderit.
+                O que esses irmãos aprontaram não foi brincadeira. Desobedeceram o Vovô Xaleira, embarcaram num Cassino bem sinistro e entraram numa baita encrenca.... E aí! Quer saber o quê houve? .....
+                Neste site, você irá ficar por dentro sobre a história deste belissimo jogo lanaçado pelos os <strong>studios bla bla bla</strong>, a Série Aniamada lançanda pela Netflix e Muuuuuuuuuito Mais.
             </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam tempore maxime corrupti quam sequi, ullam quo deleniti soluta aliquam nihil tenetur temporibus ipsum in sint est dolorem a voluptatum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias dicta repellat voluptas amet facilis aliquid officia quos omnis officiis quia eos quam harum, accusamus corporis aperiam. Unde voluptatum dolor atque?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nisi dolor, porro consectetur sunt, unde nemo deserunt labore sapiente omnis iusto deleniti dolorem reprehenderit, itaque asperiores maiores numquam libero quaerat. Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat eum porro, nostrum maiores veritatis sed, nemo quod odio animi tempora eos repellat, nulla unde quam error molestiae quasi minus a?</p>
-
+            
+            
         </article>
     </main>
 
     <!--FUNÇÃO JAVASCRIPT PARA CONFIGURAÇÃO DO MENU HAMBURGUER-->
-    <script> 
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
