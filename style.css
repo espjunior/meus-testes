@@ -11,7 +11,7 @@
 
 body, html {
     width: 100vw;
-    background-image: linear-gradient(to right, black, red,blue); /*DEFINICAO DO FUNDO DO CABEÇALHO*/
+    background-image: linear-gradient(to right, black, rgba(255, 0, 0, 0.751),#0683FF); /*DEFINICAO DO FUNDO DO CABEÇALHO*/
 
 }
 
@@ -21,7 +21,7 @@ header {
     display: block;
     margin: auto;
     width: 100vw;
-    background-image: linear-gradient(to right, black, red,blue); /*DEFINICAO DO FUNDO DO CABEÇALHO*/
+    background-image: linear-gradient(to right, black, red,#0683FF); /*DEFINICAO DO FUNDO DO CABEÇALHO*/
     
 
 }
@@ -43,11 +43,12 @@ span#burguer {
     display: block; /*PREENCHER TODO BACKGROUND DE UM CANTO A OUTRO DA TELA*/
     text-align: center; /*CENTRALIZAR O ICONE*/
     padding: 6px;
+    border-bottom: 2px solid black;
     cursor: pointer; /*O CURSO IRÁ VIRAR UMA MÃOZINHA*/
 }
 
 span#burguer:hover {
-    background-image: linear-gradient(to right, black,red,black); /*MUDAR A COR AO PASSAR O CURSO*/
+    background-image: linear-gradient(to right, white,red,white); /*MUDAR A COR AO PASSAR O CURSO*/
     color: black; /*MUDAR A COR AO PASSAR O CURSO*/
 }
 
