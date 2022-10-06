@@ -89,6 +89,7 @@ article h2 {
 article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
     display: block;
     margin: auto; /*CENTRAZLIZANDO A IMAGEM*/
+    width: 90vw;
 }
 
 article p {
