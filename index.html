@@ -4,44 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <!--LINHA ABAIXO COPIADA DO SITE https://developers.google.com/fonts/docs/material_icons-->
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Media Queries</title>
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
+        <img src="imagens/topo-celular002.jpg" alt="Imagem para Celular">
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> <!--LINHA DO DESIGNER DO MENU HAMBURGUER-->
-        <menu id="itens">
+
+        <menu id="itens"> <!--IDO ITENS CRIADO PARA JAVASCRIPT-->
             <ul>
-                <li><a href="#">Opção 01</a></li>
-                <li><a href="#">Opção 02</a></li>
-                <li><a href="#">Opção 03</a></li>
-                <li><a href="#">Opção 04</a></li>
-                <li><a href="#">Opção 05</a></li>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">A História</a></li>
+                <li><a href="#">O Jogo</a></li>
+                <li><a href="#">A Série Animada</a></li>
+                <li><a href="#">Fale com a gente</a></li>
             </ul>
         </menu>
-    </header>
+
+    </header> <!--CABEÇALHO DO SITE-->
+    
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae aspernatur repellendus consectetur laboriosam consequuntur ut. Nostrum odit minus corporis tempora deserunt omnis, nulla maiores architecto, iusto aut molestiae delectus ab. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias autem fuga deserunt aperiam architecto ipsa pariatur dicta. Eum, corrupti! Natus perspiciatis nihil eligendi fugit laboriosam, voluptatibus nemo dolor facere molestias.
-            </p>
+
+            <img class="img-pequena" src="imagens/cap001.jpg" alt="Primeiro Capitulo">
 
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis hic autem corrupti provident porro cum, nostrum eum iusto soluta consequatur est in, qui quam? Error repudiandae neque quos culpa beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eveniet quam numquam quibusdam expedita. At libero laboriosam, reiciendis sequi eum impedit consequuntur suscipit beatae magnam ea odit dolorum facilis veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, necessitatibus at tempora, sed quis voluptatem velit inventore unde non est numquam natus assumenda iusto sapiente dicta dignissimos ad vitae voluptatum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius et soluta nostrum impedit. Earum recusandae quod distinctio perspiciatis, labore quidem, aperiam ipsum laboriosam, voluptatibus neque quas nulla corrupti eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur deserunt unde. Sunt magnam corporis, cumque et, quam provident, consequatur accusantium voluptas architecto debitis necessitatibus deleniti molestias odit doloremque. Tempore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quas tenetur veniam id nam mollitia, accusamus blanditiis dolores alias. Asperiores earum quo, tempora voluptatem debitis aliquid maiores optio doloremque reprehenderit.
             </p>
-
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, incidunt in illo voluptates voluptatum magnam possimus voluptatem fugiat cumque, architecto quasi quos aspernatur eum pariatur ratione, placeat impedit. Non, similique? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quidem, perferendis quisquam suscipit expedita aut veniam odit dignissimos aliquam dolorum praesentium nobis nulla hic quam deleniti esse, repellat, voluptates mollitia?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam tempore maxime corrupti quam sequi, ullam quo deleniti soluta aliquam nihil tenetur temporibus ipsum in sint est dolorem a voluptatum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias dicta repellat voluptas amet facilis aliquid officia quos omnis officiis quia eos quam harum, accusamus corporis aperiam. Unde voluptatum dolor atque?
             </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nisi dolor, porro consectetur sunt, unde nemo deserunt labore sapiente omnis iusto deleniti dolorem reprehenderit, itaque asperiores maiores numquam libero quaerat. Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat eum porro, nostrum maiores veritatis sed, nemo quod odio animi tempora eos repellat, nulla unde quam error molestiae quasi minus a?</p>
 
         </article>
     </main>
-    <!--FUNÇÃO JAVA SCRIPT PARA OCULTAR O MENU-->
-    <script>
+
+    <!--FUNÇÃO JAVASCRIPT PARA CONFIGURAÇÃO DO MENU HAMBURGUER-->
+    <script> 
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
@@ -50,6 +53,6 @@
             }
         }
     </script>
-    
+
 </body>
 </html>

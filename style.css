@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/*CONFIGURAÇÃO BASE DA VERSÃO PARA CELULAR*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif; /*DEFINICAO DE TODAS AS FONTES DO SITE*/
+
+    margin: 0px; /*RETIRANDO TODO O ESPAÇAMENTO DO SITE*/ 
+    padding: 0px; /*RETIRANDO TODO O ESPAÇAMENTO DO SITE*/
+}
+
+body, html {
+    background-color: lightgray; /*DEFINIÇÃO DO CORPO DO SITE*/
+}
+
+
+/*------- INICIO DA CONFIGURAÇÃO DO CABEÇALHO -------*/
+header {
+    background-color:black; /*DEFINICAO DO FUNDO DO CABEÇALHO*/
+}
+
+header img { /*CONFIGURAÇÃO DA IMAGEM DO TOPO*/
+    display: block;
+    width: 96.5vw;
+}
+/*------- FIM DA CONFIGURAÇÃO DO CABEÇALHO -------*/
+
+span#burguer {
+    background-image: linear-gradient(to right, black);
+    color: white;
+    display: block; /*PREENCHER TODO BACKGROUND DE UM CANTO A OUTRO DA TELA*/
+    text-align: center; /*CENTRALIZAR O ICONE*/
+    padding: 6px;
+    cursor: pointer; /*O CURSO IRÁ VIRAR UMA MÃOZINHA*/
+}
+
+span#burguer:hover {
+    background-image: linear-gradient(to right, black,red,black); /*MUDAR A COR AO PASSAR O CURSO*/
+    color: black; /*MUDAR A COR AO PASSAR O CURSO*/
+}
+
+
+/*------- INICIO DA CONFIGURAÇÃO DO MENU -------*/
+menu {
+    display: none; /*FICARÁ FIXO*/
+    
+    
+    
+}
+
+menu ul { /*CONFIGURAÇÃO DO MENU*/
+    list-style-type: none; /*RETIRAR A BOLINHA DO MENU*/
+    
+}
+
+menu a { /*CONFIGURAÇÃO DOS LINKS DENTRO DO MENU*/
+    display: block;
+    padding: 8px; /*ESPAÇAMENTO ENTRE OS MENUS*/
+    text-decoration: none; /*RETIRAR O SUBLINHADO DO LINK*/
+    text-align: center; /*ALINHAMENTO DO TEXTO DO MENU*/
+    background-image: linear-gradient(to right, black, red, blue,black);
+    color: white; /*COR DO TEXTO*/
+    font-weight: bold; /*NEGRITO*/
+    border-top: 2px solid black /*BORDAS DA DIVISÃO DOS MENUS*/
+
+}
+
+menu a:hover { /*CONFIGURAÇÃO AO PASSAR O MOUSE NO MENU*/
+    background-image: linear-gradient(to right, white, blue);
+}
+/*------- FIM DA CONFIGURAÇÃO DO MENU -------*/
+
+
+/*------- INICIO DA CONFIGURAÇÃO DO CONTEUDO -------*/
+main { /*CONFIGURAÇÃO DO CONTEUDO*/
+    width: 90vw; /*ESPAÇAMENTO LATERAL DO CONTEUDO*/
+    background-color: white; /*DEFINICAO DA COR DO FUNDO DO CONTEUDO*/
+    margin: auto; /*O CONTEUDO IRÁ FICAR CENTRALIZADO*/
+    margin-top: 10px; /*ESPAÇAMENTO DO CONTEUDO ENTRE O MENU*/
+    padding: 10px; /*DEIXADO O TEXTODO CONTEUDO SEPARADO DAS BORDAS */
+    border-radius: 10px; /*ARREDONDAMENTO DAS BORDAAS*/
+
+}
+
+article h2 {
+    padding-bottom: 20px; /*ESPAÇAMENTO ABAIXO DO TIUTLO COM INICIO DO TEXTO*/
+}
+
+article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
+    display: block;
+    margin: auto; /*CENTRAZLIZANDO A IMAGEM*/
+}
+
+article p {
+    text-align: justify; /*O TEXTO IRA FICAR JUSTIFICADO*/
+    margin-bottom: 20px; /*ESPAÇAMENTO ABAIXO DE CADA PARAGRAFO*/
+    text-indent: 20px; /*ESPAÇAMENTO DO INICIO DE CADA PARAGRAFO*/
+}
+
+
+
+
+
