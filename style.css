@@ -10,23 +10,33 @@
 }
 
 body, html {
-    background-color: lightgray; /*DEFINIÇÃO DO CORPO DO SITE*/
+    width: 100vw;
+    background-image: linear-gradient(to right, black, red,blue); /*DEFINICAO DO FUNDO DO CABEÇALHO*/
+
 }
 
 
 /*------- INICIO DA CONFIGURAÇÃO DO CABEÇALHO -------*/
 header {
-    background-color:black; /*DEFINICAO DO FUNDO DO CABEÇALHO*/
+    display: block;
+    margin: auto;
+    width: 100vw;
+    background-image: linear-gradient(to right, black, red,blue); /*DEFINICAO DO FUNDO DO CABEÇALHO*/
+    
+
 }
 
 header img { /*CONFIGURAÇÃO DA IMAGEM DO TOPO*/
     display: block;
-    width: 96.5vw;
     margin: auto;
+    width: 100vw; /*PREENCHEU DE CANTO A CANTO O MENU HAMBU*/
+    
     
 }
 /*------- FIM DA CONFIGURAÇÃO DO CABEÇALHO -------*/
 
+
+/*------- INICIO DA CONFIGURAÇÃO DO MENU HAMBUGUINHO -------*/
 span#burguer {
     background-image: linear-gradient(to right, black);
     color: white;
@@ -44,10 +54,7 @@ span#burguer:hover {
 
 /*------- INICIO DA CONFIGURAÇÃO DO MENU -------*/
 menu {
-    display: none; /*FICARÁ FIXO*/
-    
-    
-    
+    display: none; /*FICARÁ FIXO*/    
 }
 
 menu ul { /*CONFIGURAÇÃO DO MENU*/
@@ -75,9 +82,10 @@ menu a:hover { /*CONFIGURAÇÃO AO PASSAR O MOUSE NO MENU*/
 
 /*------- INICIO DA CONFIGURAÇÃO DO CONTEUDO -------*/
 main { /*CONFIGURAÇÃO DO CONTEUDO*/
-    width: 90vw; /*ESPAÇAMENTO LATERAL DO CONTEUDO*/
+    display: block;
+    margin: auto;
+    width: 80vw; /*ESPAÇAMENTO LATERAL DO CONTEUDO*/
     background-color: white; /*DEFINICAO DA COR DO FUNDO DO CONTEUDO*/
-    margin: auto; /*O CONTEUDO IRÁ FICAR CENTRALIZADO*/
     margin-top: 10px; /*ESPAÇAMENTO DO CONTEUDO ENTRE O MENU*/
     padding: 10px; /*DEIXADO O TEXTODO CONTEUDO SEPARADO DAS BORDAS */
     border-radius: 10px; /*ARREDONDAMENTO DAS BORDAAS*/
@@ -90,14 +98,15 @@ article h2 {
 
 article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
     display: block;
-    margin: auto; /*CENTRAZLIZANDO A IMAGEM*/
-    width: 90vw;
+    margin: auto; /*CENTRALIZANDO A IMAGEM*/
+    max-width: 70vw;
 }
 
 article p {
     text-align: justify; /*O TEXTO IRA FICAR JUSTIFICADO*/
     margin-bottom: 20px; /*ESPAÇAMENTO ABAIXO DE CADA PARAGRAFO*/
     text-indent: 20px; /*ESPAÇAMENTO DO INICIO DE CADA PARAGRAFO*/
+    font-size: 12px;
 }
 
 
