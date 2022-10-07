@@ -81,7 +81,8 @@ menu a { /*CONFIGURAÇÃO DOS LINKS DENTRO DO MENU*/
     background-image: linear-gradient(to right, black, red);
     color: white; /*COR DO TEXTO*/
     font-weight: bold; /*NEGRITO*/
-    border-top: 2px solid black /*BORDAS DA DIVISÃO DOS MENUS*/
+    border-top: 2px solid black; /*BORDAS DA DIVISÃO DOS MENUS*/
+    transition-duration: .9s; /*TRANSICAO SUAVE DA MUDANÇA DE SELECAO DOS MENUS*/
 
 }
 
@@ -108,7 +109,7 @@ article h2 {
     font-family: 'Cuphead'; /*CHAMANDO A FONTE DECLARADA*/
     padding-bottom: 20px; /*ESPAÇAMENTO ABAIXO DO TIUTLO COM INICIO DO TEXTO*/
     background-image: linear-gradient(to right, yellow, white);
-    border-radius: 10px;
+    border-radius: 10px; /*ARREDONDADMENTO DO BACKGROUND*/
     padding: 10px;
 }
 
@@ -118,29 +119,33 @@ article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
     max-width: 50vw;
     margin-top: 20px;
     margin-bottom: 40px;
-    border: 2px solid black;
+    border: 2px solid black; /*BORDA DA IMAGEM*/
     border-radius: 2px;
 }
 
-article p {
+article p { /*CONFIGURAÇÃO DO PARAGRAFO*/
     text-align: justify; /*O TEXTO IRA FICAR JUSTIFICADO*/
     margin-bottom: 20px; /*ESPAÇAMENTO ABAIXO DE CADA PARAGRAFO*/
     text-indent: 20px; /*ESPAÇAMENTO DO INICIO DE CADA PARAGRAFO*/
-    font-family: 'Cuphead';
-    font-size: 20px;
+    font-family: 'Cuphead'; /*CHAMANDO A FONTE PERSONALIZADA*/
+    font-size: 20px; /*TAMANHO DA FONTE*/
 }
 
+/*---- INICIO DA CONFIGURAÇÃO DO RODAPE ----*/
 footer {
+    background-image: linear-gradient(to right, black, red,blue);
     display: block;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 50px;
+    border: 1px solid white;
     text-align: center;
-    background-image: linear-gradient(to right, black, red,blue);
     color: white;
+    text-shadow: 2px 3px 1px black;
     font-weight: bold;
+    font-size: 13px;
     padding: 10px;
 }
-
+/*---- FIM DA CONFIGURAÇÃO DO RODAPE ----*/
 
 
 
