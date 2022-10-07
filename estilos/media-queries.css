@@ -20,12 +20,13 @@ Grandes telas: acima de 1200px
 
     menu {
         display: block;
-        
+                
     }
 
-    menu ul li {
+    menu ul li { /*CONFIGURAR O MENU APOS MUDANCA DE TELA*/
         display: inline-block;
         
+                
         
     }
 
