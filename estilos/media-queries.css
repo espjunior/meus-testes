@@ -21,13 +21,10 @@ Grandes telas: acima de 1200px
     menu {
         display: block;
         text-align: center;
-        
-                        
     }
 
     menu ul li { /*CONFIGURAR O MENU APOS MUDANCA DE TELA*/
         display: inline-block; /*MENU FICARÁ UM AO LADO DO OUTRO*/
-        
         width: 190px; /*ALARGAMENTO DOS MENUS NAS TELAS GRANDES*/
         margin-right: -5px; /*RETIRAR O ESPAÇAMENTO DOS MENUS NAS TELAS GRANDES*/
         border-right: 6px solid black; /*BORDAR DA PARTE DIREITA*/
@@ -37,9 +34,10 @@ Grandes telas: acima de 1200px
     }
 
     menu a {
-        padding: 20px;
-        height: 10px;
-        
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        height: 30px;
                 
     }
 

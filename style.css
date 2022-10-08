@@ -2,11 +2,30 @@
 
 /*DECLARAÇÃO DA FONTE PARA USO*/
 
-/*@font-face {
+@font-face { /*VARIAVEL DA FONTE DO MENU*/
+    font-family: 'Fonte001';
+    src: url(../meus-testes/fontes/reglisse.back.otf) format('Opentype');
+}
+
+@font-face { /*VARIAVEL DA FONTE DO TITULO*/
     font-family: 'Cuphead';
     src: url(../meus-testes/fontes/bodo-amat.ttf) format('truetype');
 }
-*/
+
+
+@font-face { /*VARIAVEL DA FONTE DO CONTEUDO*/
+    font-family: 'Fonte002';
+    src: url(../meus-testes/fontes/provicali.otf) format('Opentype');
+}
+
+
+
+:root {
+    --fonte-menu: Fonte001, Verdana, sans-serif ;
+    --font-titulo: Fonte002, Verdana, sans-serif ;
+    --font-conteudo:;
+}
+
 /*FIM DA DECLARAÇÃO DA FONTE PARA USO*/
 
 
@@ -81,6 +100,8 @@ menu a { /*CONFIGURAÇÃO DOS LINKS DENTRO DO MENU*/
     background-image: linear-gradient(to right, black, red);
     color: white; /*COR DO TEXTO*/
     font-weight: bold; /*NEGRITO*/
+    font-family: var(--fonte-menu); /*USO DA FONTE DECLARADA COMO VARIAVEL*/
+    font-size: 16px; /*TAMANHO DA FONTE*/
     border-top: 2px solid black; /*BORDAS DA DIVISÃO DOS MENUS*/
     transition-duration: .9s; /*TRANSICAO SUAVE DA MUDANÇA DE SELECAO DOS MENUS*/
 
@@ -98,30 +119,37 @@ main { /*CONFIGURAÇÃO DO CONTEUDO*/
     display: block;
     margin: auto;
     width: 80vw; /*ESPAÇAMENTO LATERAL DO CONTEUDO*/
-    background-image: linear-gradient(to right, white, rgb(191, 226, 238));/*DEFINICAO DA COR DO FUNDO DO CONTEUDO*/
+    background-image: linear-gradient(to right, rgba(234, 234, 33, 0.688), white, rgb(191, 226, 238));/*DEFINICAO DA COR DO FUNDO DO CONTEUDO*/
     margin-top: 10px; /*ESPAÇAMENTO DO CONTEUDO ENTRE O MENU*/
     padding: 10px; /*DEIXADO O TEXTODO CONTEUDO SEPARADO DAS BORDAS */
     border-radius: 10px; /*ARREDONDAMENTO DAS BORDAAS*/
 
 }
 
-article h2 {
+/*-------- CONFIGURAÇÃO DO TITULO DO CONTEUDO -------- */
+article h2 { 
     font-family: 'Cuphead'; /*CHAMANDO A FONTE DECLARADA*/
     padding-bottom: 20px; /*ESPAÇAMENTO ABAIXO DO TIUTLO COM INICIO DO TEXTO*/
     background-image: linear-gradient(to right, yellow, white);
     border-radius: 10px; /*ARREDONDADMENTO DO BACKGROUND*/
+    box-shadow: 2px 3px black;
     padding: 10px;
 }
+/*-------- FIM DA CONFIGURAÇÃO DO TITULO DO CONTEUDO -------- */
 
+
+/*-------- CONFIGURAÇÃO DA IMAGEM DO CONTEUDO -------- */
 article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
     display: block;
     margin: auto; /*CENTRALIZANDO A IMAGEM*/
     max-width: 50vw;
     margin-top: 20px;
     margin-bottom: 40px;
-    border: 2px solid black; /*BORDA DA IMAGEM*/
+    border: 3px solid black; /*BORDA DA IMAGEM*/
     border-radius: 2px;
 }
+/*-------- FIM DA CONFIGURAÇÃO DO TITULO DO CONTEUDO -------- */
+
 
 article p { /*CONFIGURAÇÃO DO PARAGRAFO*/
     text-align: justify; /*O TEXTO IRA FICAR JUSTIFICADO*/
@@ -131,7 +159,15 @@ article p { /*CONFIGURAÇÃO DO PARAGRAFO*/
     font-size: 20px; /*TAMANHO DA FONTE*/
 }
 
-/*---- INICIO DA CONFIGURAÇÃO DO RODAPE ----*/
+span#primeira-letra {
+    font-size: 60px;
+    font-weight: bold;
+    background-color: yellowgreen;
+    padding: 5px;
+    
+}
+
+/*---- CONFIGURAÇÃO DO RODAPE ----*/
 footer {
     background-image: linear-gradient(to right, black, red,blue);
     display: block;
