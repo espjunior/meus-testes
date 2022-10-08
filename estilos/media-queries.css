@@ -2,7 +2,7 @@
 /*CONFIGURAÇÃO PARA OUTRAS TELAS*/
 
 
-/* TYICAL DEVICE BREAKPOINTS
+/* TYPICAL DEVICE BREAKPOINTS
 -----------------------------
 Pequenas telas: até 600px
 Celular: de 600px até 768px
@@ -45,5 +45,5 @@ Grandes telas: acima de 1200px
         width: 768px;
     }
 
-
 }
+

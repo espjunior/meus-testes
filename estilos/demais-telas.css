@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*ARQUIVOS CRIADO PARA CONFIGURAÇÃO DAS OUTRAS TELAS, TABLET, DESKTOP E TELAS GRANDES. 
+FOI CRIADO UM TERCEIRO ARQUIVO CSS, O QUAL ESTÁ SENDO CHAMADO NO HTML.
+*/
+
+
+@media print { /*IMPRESSORA*/
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+    header img#imgcelular {
+        display: none;
+    }
+    
+    header img#imgtablet { /*IMAGEM DO TOPO DO SITE SERA MOSTRADA PARA TABLET*/
+        display: block;
+    }
+    
+    header img#imgtelas {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/
+    header img#imgcelular {
+        display: none;
+    }
+    
+    header img#imgtablet { 
+        display: none;
+    }
+    
+    header img#imgtelas { /*IMAGEM DO TOPO DO SITE IRÁ MUDAR PARA DESKTOP*/
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) { /*GRANDES TELAS*/
+    header img#imgcelular {
+        display: none;
+    }
+    
+    header img#imgtablet { 
+        display: none;
+    }
+    
+    header img#imgtelas { /*IMAGEM DO TOPO DO SITE IRÁ MUDAR PARA DESKTOP*/
+        display: block;
+    }
+    
+}
