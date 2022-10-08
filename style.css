@@ -3,24 +3,24 @@
 /*DECLARAÇÃO DA FONTE PARA USO*/
 
 @font-face { /*VARIAVEL DA FONTE DO MENU*/
-    font-family: 'Fonte001';
-    src: url(../meus-testes/fontes/reglisse.back.otf) format('Opentype');
+    font-family: 'Menu';
+    src: url() format('Opentype');
 }
 
 @font-face { /*VARIAVEL DA FONTE DO TITULO*/
-    font-family: 'Cuphead';
-    src: url(../meus-testes/fontes/bodo-amat.ttf) format('truetype');
+    font-family: 'Titulo';
+    src: url(../meus-testes/fontes/soft.marshmallow.otf) format('Opentype');
 }
 
 
 @font-face { /*VARIAVEL DA FONTE DO CONTEUDO*/
-    font-family: 'Fonte002';
-    src: url(../meus-testes/fontes/provicali.otf) format('Opentype');
+    font-family: 'Conteudo';
+    src: url(../meus-testes/fontes/tommy.soft.regular.otf) format('Opentype');
 }
 
 
 
-:root {
+:root { /*DECLARAÇÃO DE VARIAVEIS PARA OS FONTES*/
     --fonte-menu: Fonte001, Verdana, sans-serif ;
     --font-titulo: Fonte002, Verdana, sans-serif ;
     --font-conteudo:;
@@ -122,7 +122,6 @@ menu a { /*CONFIGURAÇÃO DOS LINKS DENTRO DO MENU*/
     background-image: linear-gradient(to right, black, red);
     color: white; /*COR DO TEXTO*/
     font-weight: bold; /*NEGRITO*/
-    font-family: var(--fonte-menu); /*USO DA FONTE DECLARADA COMO VARIAVEL*/
     font-size: 16px; /*TAMANHO DA FONTE*/
     border-top: 2px solid black; /*BORDAS DA DIVISÃO DOS MENUS*/
     transition-duration: .9s; /*TRANSICAO SUAVE DA MUDANÇA DE SELECAO DOS MENUS*/
@@ -153,6 +152,8 @@ article h2 {
     font-family: 'Cuphead'; /*CHAMANDO A FONTE DECLARADA*/
     padding-bottom: 20px; /*ESPAÇAMENTO ABAIXO DO TIUTLO COM INICIO DO TEXTO*/
     background-image: linear-gradient(to right, yellow, white);
+    font-family: 'Titulo';
+    font-size: 1.8em;
     border-radius: 10px; /*ARREDONDADMENTO DO BACKGROUND*/
     box-shadow: 2px 3px black;
     padding: 10px;
@@ -166,7 +167,7 @@ article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
     margin: auto; /*CENTRALIZANDO A IMAGEM*/
     max-width: 50vw;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 12px; /*ESPASSAMENTO DA IMAGEM ENTRE O INCIO DO TEXTO*/
     border: 3px solid black; /*BORDA DA IMAGEM*/
     border-radius: 2px;
 }
@@ -177,7 +178,7 @@ article p { /*CONFIGURAÇÃO DO PARAGRAFO*/
     text-align: justify; /*O TEXTO IRA FICAR JUSTIFICADO*/
     margin-bottom: 20px; /*ESPAÇAMENTO ABAIXO DE CADA PARAGRAFO*/
     text-indent: 20px; /*ESPAÇAMENTO DO INICIO DE CADA PARAGRAFO*/
-    font-family: 'Cuphead'; /*CHAMANDO A FONTE PERSONALIZADA*/
+    font-family: 'Conteudo'; /*CHAMANDO A FONTE PERSONALIZADA*/
     font-size: 20px; /*TAMANHO DA FONTE*/
 }
 
