@@ -166,7 +166,7 @@ article h2 {
 article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
     display: block;
     margin: auto; /*CENTRALIZANDO A IMAGEM*/
-    max-width: 50vw;
+    max-width: 75vw;
     margin-top: 20px;
     margin-bottom: 12px; /*ESPASSAMENTO DA IMAGEM ENTRE O INCIO DO TEXTO*/
     border: 3px solid black; /*BORDA DA IMAGEM*/
@@ -181,6 +181,12 @@ article p { /*CONFIGURAÇÃO DO PARAGRAFO*/
     text-indent: 20px; /*ESPAÇAMENTO DO INICIO DE CADA PARAGRAFO*/
     font-family: 'Conteudo'; /*CHAMANDO A FONTE PERSONALIZADA*/
     font-size: 20px; /*TAMANHO DA FONTE*/
+}
+
+h3#subtitulo { /*CONFIGURAÇÃO DO SUBTITULO H3*/
+    margin-top: 40px;
+    text-indent: 33px;
+    font-size: 20px;
 }
 
 span#primeira-letra {

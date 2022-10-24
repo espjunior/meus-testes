@@ -21,6 +21,15 @@ FOI CRIADO UM TERCEIRO ARQUIVO CSS, O QUAL ESTÁ SENDO CHAMADO NO HTML.
     header img#imgtelas {
         display: none;
     }
+
+    article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
+        display: block;
+        margin: auto; /*CENTRALIZANDO A IMAGEM*/
+        max-width: 75vw;
+        margin-top: 20px;
+        margin-bottom: 12px; /*ESPASSAMENTO DA IMAGEM ENTRE O INCIO DO TEXTO*/
+        border: 3px solid black; /*BORDA DA IMAGEM*/
+        border-radius: 2px;
     
 }
 
