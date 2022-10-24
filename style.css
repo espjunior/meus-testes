@@ -63,7 +63,7 @@ header {
 header img { /*CONFIGURAÇÃO DA IMAGEM DO TOPO*/
     display: block;
     margin: auto;
-    width: 100vw; /*PREENCHEU DE CANTO A CANTO O MENU HAMBU*/
+    width: 100vw; /*PREENCHEU DE CANTO A CANTO O MENU HAMBURGUER*/
     
     
 }
