@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet" href="estilos/demais-telas.css">
+    <title>Os Chefões</title>
+    <body onresize="mudouTamanho()">  <!--COMANDO JAVA SCRIPT-->
+        <header>
+            <img id="imgtelas" src="imagens/topo-telas.jpg" alt="Imagem para Telas Grandes">
+            <img id="imgtablet" src="imagens/topo-tablet.jpg" alt="Imagem para Tablet">
+            <img id="imgcelular" src="imagens/topo-celular003.jpg" alt="Imagem para Celular">
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> <!--LINHA DO DESIGNER DO MENU HAMBURGUER-->
+            
+            <menu id="itens"> <!--IDO ITENS CRIADO PARA JAVASCRIPT-->
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="paghistoria.html">A História</a></li>
+                    <li><a href="ojogo.html">O Jogo</a></li>
+                    <li><a href="#">A Série Animada</a></li>
+                    <li><a href="personagens.html">Os Personagens</a></li>
+                    <li><a href="#">Fale com a gente</a></li>
+                </ul>
+            </menu>
+    
+        </header> <!--CABEÇALHO DO SITE-->
+        
+        <main>
+            <article>
+                <h2>Os Chefões</h2>
+    
+                <img class="img-pequena" src="imagens/logostudio.jpg" alt="Logomarca do Studio">
+    
+                <p>
+                    <span id="primeira-letra">O</span> Studio MDHR é um desenvolvedor independente de videogames que existe para surpreender e encantar nossos jogadores! Fundado no Canadá pelos irmãos <strong>Chad e Jared Moldenhauer</strong> com base em seu amor compartilhado por ação de arcade retrô e desenhos vintage, o estúdio lançou seu título principal Cuphead em 2017 para Xbox One e PC.
+                </p>
+                <br>
+                <br>
+    
+                <img class="img-pequena" src="imagens/gameplay01.jpg" alt="Gameplay">
+    
+                <p>
+                    Cuphead é um clássico jogo de ação de corrida e arma fortemente focado em batalhas contra chefes. O que diferencia o jogo, além da jogabilidade de contração rápida, é a maneira como ele se inspira fielmente nos desenhos animados da década de 1930. Tudo, desde o visual até o áudio, é meticulosamente criado com as mesmas técnicas da época, desde a animação tradicional em cel desenhada à mão e fundos em aquarela até gravações de jazz de orquestra ao vivo.
+                </p>
+                
+                                
+                
+                
+                
+            </article>
+        </main>
+    
+            <!--FUNÇÃO JAVASCRIPT PARA CONFIGURAÇÃO DO MENU HAMBURGUER-->
+        <script>
+            function mudouTamanho() {
+                if (window.innerWidth >= 768) {
+                    itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+        
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
+    
+    <footer>
+        <h3>Desenvolvido Edvaldo Junior</h3>
+            
+    </footer>
+    
+    
+    </body>
+    </html>
