@@ -184,9 +184,14 @@ article p { /*CONFIGURAÇÃO DO PARAGRAFO*/
 }
 
 h3#subtitulo { /*CONFIGURAÇÃO DO SUBTITULO H3*/
+    text-align: left;
     margin-top: 40px;
-    text-indent: 33px;
+    font-weight: bold;
     font-size: 20px;
+    background-image: linear-gradient(to right, white, rgb(220, 220, 122));
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 3px black; /*SOMBREAMENTO DO BOX DO TITULO*/
 }
 
 span#primeira-letra {
