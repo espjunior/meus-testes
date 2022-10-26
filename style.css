@@ -177,6 +177,7 @@ article img.img-pequena { /*CONFIGURANDO AS IMAGENS DO CONTEUDO*/
 
 article p { /*CONFIGURAÇÃO DO PARAGRAFO*/
     text-align: justify; /*O TEXTO IRA FICAR JUSTIFICADO*/
+    margin-top: 30px;
     margin-bottom: 20px; /*ESPAÇAMENTO ABAIXO DE CADA PARAGRAFO*/
     text-indent: 20px; /*ESPAÇAMENTO DO INICIO DE CADA PARAGRAFO*/
     font-family: 'Conteudo'; /*CHAMANDO A FONTE PERSONALIZADA*/
@@ -192,6 +193,10 @@ h3#subtitulo { /*CONFIGURAÇÃO DO SUBTITULO H3*/
     padding: 5px;
     border-radius: 10px;
     box-shadow: 2px 3px black; /*SOMBREAMENTO DO BOX DO TITULO*/
+}
+
+p#pjogo {
+    margin-top: 30px;
 }
 
 span#primeira-letra {
